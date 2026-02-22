@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #131921;
+  color: white;
+}
+
+.nav-btn {
+  margin-left: 15px;
+  padding: 8px 15px;
+  border: none;
+  background-color: #febd69;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.cart-btn {
+  background-color: #f08804;
+}
+
+/* Container */
+.container {
+  padding: 30px;
+}
+
+/* Grid Layout */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Product Card */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.discount {
+  color: green;
+  font-weight: bold;
+}
+
+.add-btn {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  background-color: #ffd814;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #f7ca00;
+}
