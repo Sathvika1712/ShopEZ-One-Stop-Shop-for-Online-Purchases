@@ -15,7 +15,7 @@ app.use("/auth", authRoutes);
 app.use("/orders", orderRoutes);
 app.use("/admin", adminRoutes);
 // CONNECT TO MONGODB ATLAS
-mongoose.connect("mongodb+srv://lakshmisathvikadevanaboina_db_user:GeKaXUdSNizq47qi@cluster0.k1l1vxy.mongodb.net/shopez?retryWrites=true&w=majority")
+mongoose.connect(process.env.MONGO_URI)
   .then(() => {
     console.log("MongoDB Connected");
   })
@@ -202,3 +202,4 @@ app.get("/orders/:userId", async (req, res) => {
 app.listen(5000, () => {
   console.log("Server running on port 5000");
 });
+
